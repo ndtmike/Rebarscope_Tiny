@@ -1,0 +1,74 @@
+        1 file(s) copied.
+
+avrdude: Version 6.3, compiled on Feb 17 2016 at 09:25:53
+         Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+         Copyright (c) 2007-2014 Joerg Wunsch
+
+         System wide configuration file is "C:\AVR_Dude\avrdude.conf"
+
+         Using Port                    : usb
+         Using Programmer              : usbtiny
+avrdude: usbdev_open(): Found USBtinyISP, bus:device: bus-0:\\.\libusb0-0001--0x1781-0x0c9f
+         AVR Part                      : ATtiny84
+         Chip Erase delay              : 4500 us
+         PAGEL                         : P00
+         BS2                           : P00
+         RESET disposition             : possible i/o
+         RETRY pulse                   : SCK
+         serial program mode           : yes
+         parallel program mode         : yes
+         Timeout                       : 200
+         StabDelay                     : 100
+         CmdexeDelay                   : 25
+         SyncLoops                     : 32
+         ByteDelay                     : 0
+         PollIndex                     : 3
+         PollValue                     : 0x53
+         Memory Detail                 :
+
+                                  Block Poll               Page                       Polled
+           Memory Type Mode Delay Size  Indx Paged  Size   Size #Pages MinW  MaxW   ReadBack
+           ----------- ---- ----- ----- ---- ------ ------ ---- ------ ----- ----- ---------
+           eeprom        65     6     4    0 no        512    4      0  4000  4500 0xff 0xff
+           flash         65     6    32    0 yes      8192   64    128  4500  4500 0xff 0xff
+           signature      0     0     0    0 no          3    0      0     0     0 0x00 0x00
+           lock           0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           lfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           hfuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           efuse          0     0     0    0 no          1    0      0  9000  9000 0x00 0x00
+           calibration    0     0     0    0 no          1    0      0     0     0 0x00 0x00
+
+         Programmer Type : USBtiny
+         Description     : USBtiny simple USB programmer, http://www.ladyada.net/make/usbtinyisp/
+avrdude: programmer operation not supported
+
+avrdude: Using SCK period of 10 usec
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e930c (probably t84)
+avrdude: NOTE: "flash" memory has been specified, an erase cycle will be performed
+         To disable this feature, specify the -D option.
+avrdude: erasing chip
+avrdude: Using SCK period of 10 usec
+avrdude: reading input file "Rebarscope_Tiny.hex"
+avrdude: input file Rebarscope_Tiny.hex auto detected as Intel Hex
+avrdude: writing flash (234 bytes):
+
+Writing | ################################################## | 100% 0.27s
+
+avrdude: 234 bytes of flash written
+avrdude: verifying flash memory against Rebarscope_Tiny.hex:
+avrdude: load data flash data from input file Rebarscope_Tiny.hex:
+avrdude: input file Rebarscope_Tiny.hex auto detected as Intel Hex
+avrdude: input file Rebarscope_Tiny.hex contains 234 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 0.40s
+
+avrdude: verifying ...
+avrdude: 234 bytes of flash verified
+
+avrdude done.  Thank you.
+
